@@ -13,7 +13,7 @@ Dự án tập trung khảo sát website thương mại điện tử **FAHASA** 
 - Hiển thị đầy đủ hình ảnh, tên sản phẩm, tác giả, đánh giá sao.
 - Hiển thị nổi bật giá khuyến mãi, giá gốc gạch ngang và nhãn phần trăm giảm giá (`-20%`).
 - Tích hợp nút thao tác nhanh ("Thêm giỏ hàng", "Mua ngay", "Xem nhanh").
-- Bố cục linh hoạt (Responsive) thích ứng mượt mà trên nhiều kích thước màn hình từ Desktop, Tablet đến Mobile.
+- Bố cục linh hoạt thích ứng mượt mà trên nhiều kích thước màn hình từ Desktop, Tablet đến Mobile.
 
 ## 4. Công nghệ sử dụng
 - HTML5
@@ -34,4 +34,4 @@ Dự án tập trung khảo sát website thương mại điện tử **FAHASA** 
 - **Phần AI hỗ trợ:** Đề xuất cấu trúc HTML5 ngữ nghĩa, xây dựng hệ thống biến màu (CSS Variables) và viết mẫu bố cục CSS Grid đáp ứng đa màn hình.
 - **Phần tôi kiểm tra, điều chỉnh và bổ sung:** 
   - Kiểm tra tính liên kết giữa file HTML và CSS trên trình duyệt thực tế.
-  - Tự phát hiện lỗi vỡ nút bấm khi thu nhỏ màn hình điện thoại dưới 360px và chủ động điều chỉnh đoạn CSS `@media` chuyển nút sang hàng dọc để tối ưu trải nghiệm ngón tay cái (Thumb zone).
+  - Tự phát hiện lỗi vỡ nút bấm khi thu nhỏ màn hình điện thoại dưới 360px và chủ động điều chỉnh đoạn CSS `@media` chuyển nút sang hàng dọc để tối ưu trải nghiệm ngón tay cái.
