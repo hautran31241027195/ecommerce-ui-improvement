@@ -17,7 +17,7 @@
 - Cung cấp đoạn mã HTML và CSS hoàn chỉnh sử dụng CSS Grid và Flexbox, tách biệt rõ ràng file cấu trúc và file định dạng kiểu dáng.
 
 ## 5. Kiểm tra và điều chỉnh
-- **Điểm giữ nguyên:** Cấu trúc lưới sản phẩm (`CSS Grid`) 4 cột và cơ chế đổi màu theo bảng màu chuẩn của thương hiệu FAHASA (`#C92127`).
+- **Điểm giữ nguyên:** Cấu trúc lưới sản phẩm 4 cột và cơ chế đổi màu theo bảng màu chuẩn của thương hiệu FAHASA (`#C92127`).
 - **Điểm đã chỉnh sửa/bổ sung:** 
   - Đối chiếu thực tế website FAHASA để loại bỏ các giả định không chính xác của AI (ví dụ: thực tế giỏ hàng chưa tính sẵn phí ship chính xác như dự đoán ban đầu).
   - Điều chỉnh thêm các thuộc tính CSS trên thiết bị di động (`@media (max-width: 599px)`) để chuyển cụm nút thao tác mua hàng sang dạng hàng dọc, giúp tránh lỗi tràn chữ và tăng kích thước vùng bấm trên màn hình cảm ứng.
