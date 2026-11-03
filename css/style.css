@@ -1,351 +1,276 @@
-/* ==========================================================================
-   1. ĐỊNH NGHĨA BIẾN VÀ RESET CSS (GLOBAL STYLES)
-   ========================================================================== */
-:root {
-    --primary-color: #C92127;     /* Đỏ đặc trưng FAHASA */
-    --primary-hover: #A0181D;
-    --text-color: #333333;
-    --text-muted: #777777;
-    --bg-light: #F0F2F5;
-    --card-bg: #FFFFFF;
-    --border-color: #E0E0E0;
-    --badge-bg: #C92127;
-    --star-color: #F5A623;
-    --radius-sm: 4px;
-    --radius-md: 8px;
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
-    --shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.12);
-    --transition: all 0.3s ease;
-}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cải Tiến Giao Diện Thẻ Sản Phẩm - FAHASA</title>
+    <!-- Link file CSS riêng -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+   <main class="container">
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--bg-light);
-    color: var(--text-color);
-    line-height: 1.5;
-    padding: 20px 0;
-}
+    <section class="product-section"
+             aria-labelledby="product-heading">
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+        <!-- TIÊU ĐỀ KHU VỰC -->
+        <header class="section-header">
+            <h2 class="section-title"
+                id="product-heading">
+                SÁCH NỔI BẬT NĂM 2026
+            </h2>
 
-/* ==========================================================================
-   2. SECTON HEADER
-   ========================================================================== */
-.product-section {
-    background-color: var(--card-bg);
-    padding: 20px;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
-}
+            <a href="#" class="view-more">
+                Xem tất cả &raquo;
+            </a>
+        </header>
 
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
+        <!-- DANH SÁCH SẢN PHẨM -->
+        <div class="product-grid">
 
-.section-title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    text-transform: uppercase;
-}
+            <!-- SẢN PHẨM 1 -->
+            <article class="product-card">
+                <div class="product-image-box">
+                    <span class="badge-discount">-20%</span>
 
-.view-more {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: var(--transition);
-}
+                    <img
+                        src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&q=80"
+                        alt="Cây Cam Ngọt Của Tôi"
+                        class="product-img"
+                    >
 
-.view-more:hover {
-    color: var(--primary-hover);
-    text-decoration: underline;
-}
+                    <button type="button"
+                            class="btn-quickview">
+                        Xem nhanh
+                    </button>
+                </div>
 
-/* ==========================================================================
-   3. BỐ CỤC LƯỚI SẢN PHẨM (RESPONSIVE GRID)
-   ========================================================================== */
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 Cột trên Desktop */
-    gap: 16px;
-}
+                <div class="product-info">
+                    <p class="product-category">
+                        Văn Học Bán Chạy
+                    </p>
 
-/* ==========================================================================
-   4. THIẾT KẾ THẺ SẢN PHẨM (PRODUCT CARD)
-   ========================================================================== */
-.product-card {
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-md);
-    padding: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    transition: var(--transition);
-}
+                    <h3 class="product-title"
+                        title="Cây Cam Ngọt Của Tôi">
+                        Cây Cam Ngọt Của Tôi
+                    </h3>
 
-.product-card:hover {
-    border-color: transparent;
-    box-shadow: var(--shadow-hover);
-    transform: translateY(-4px);
-}
+                    <p class="product-author">
+                        José Mauro de Vasconcelos
+                    </p>
 
-/* KHỐI HÌNH ẢNH SẢN PHẨM */
-.product-image-box {
-    position: relative;
-    width: 100%;
-    padding-top: 125%; /* Tỉ lệ khung ảnh 4:5 chuyên cho bìa sách */
-    overflow: hidden;
-    border-radius: var(--radius-sm);
-    background-color: #F9F9F9;
-}
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-count">(128)</span>
+                    </div>
 
-.product-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: var(--transition);
-}
+                    <div class="product-price-box">
+                        <span class="current-price">
+                            86.400 đ
+                        </span>
+                        <span class="old-price">
+                            108.000 đ
+                        </span>
+                    </div>
 
-.product-card:hover .product-img {
-    transform: scale(1.05);
-}
+                    <div class="product-actions">
+                        <button type="button"
+                                class="btn-add-cart">
+                            Thêm giỏ hàng
+                        </button>
 
-/* BADGE GIẢM GIÁ */
-.badge-discount {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    background-color: var(--badge-bg);
-    color: #FFFFFF;
-    font-size: 0.75rem;
-    font-weight: 700;
-    padding: 3px 6px;
-    border-radius: var(--radius-sm);
-    z-index: 2;
-}
+                        <button type="button"
+                                class="btn-buy-now">
+                            Mua ngay
+                        </button>
+                    </div>
+                </div>
+            </article>
 
-/* NÚT XEM NHANH (HOVER DESKTOP) */
-.btn-quickview {
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.75);
-    color: #FFFFFF;
-    border: none;
-    padding: 6px 14px;
-    font-size: 0.8rem;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: var(--transition);
-    white-space: nowrap;
-    opacity: 0;
-    z-index: 2;
-}
+            <!-- SẢN PHẨM 2 -->
+            <article class="product-card">
+                <div class="product-image-box">
+                    <span class="badge-discount">-25%</span>
 
-.product-card:hover .btn-quickview {
-    bottom: 12px;
-    opacity: 1;
-}
+                    <img
+                        src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&q=80"
+                        alt="Đại Dương Đen"
+                        class="product-img"
+                    >
 
-.btn-quickview:hover {
-    background-color: var(--primary-color);
-}
+                    <button type="button"
+                            class="btn-quickview">
+                        Xem nhanh
+                    </button>
+                </div>
 
-/* THÔNG TIN SẢN PHẨM */
-.product-info {
-    margin-top: 12px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
+                <div class="product-info">
+                    <p class="product-category">Tâm Lý Học</p>
 
-.product-category {
-    font-size: 0.75rem;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    margin-bottom: 4px;
-}
+                    <h3 class="product-title"
+                        title="Đại Dương Đen - Những Nỗi Đau Mang Tên Trầm Cảm">
+                        Đại Dương Đen - Những Nỗi Đau Mang Tên Trầm Cảm
+                    </h3>
 
-.product-title {
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: var(--text-color);
-    line-height: 1.3;
-    height: 2.6em; /* Giới hạn 2 dòng */
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    margin-bottom: 4px;
-}
+                    <p class="product-author">
+                        Đặng Hoàng Giang
+                    </p>
 
-.product-author {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    margin-bottom: 6px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-count">(95)</span>
+                    </div>
 
-/* ĐÁNH GIÁ SAO */
-.product-rating {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    margin-bottom: 8px;
-}
+                    <div class="product-price-box">
+                        <span class="current-price">
+                            112.500 đ
+                        </span>
+                        <span class="old-price">
+                            150.000 đ
+                        </span>
+                    </div>
 
-.stars {
-    color: var(--star-color);
-    font-size: 0.85rem;
-    letter-spacing: 1px;
-}
+                    <div class="product-actions">
+                        <button type="button"
+                                class="btn-add-cart">
+                            Thêm giỏ hàng
+                        </button>
 
-.rating-count {
-    font-size: 0.75rem;
-    color: var(--text-muted);
-}
+                        <button type="button"
+                                class="btn-buy-now">
+                            Mua ngay
+                        </button>
+                    </div>
+                </div>
+            </article>
 
-/* GIÁ TIỀN */
-.product-price-box {
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-    margin-top: auto; /* Đẩy giá tiền xuống đáy phần info */
-    margin-bottom: 12px;
-}
+            <!-- SẢN PHẨM 3 -->
+            <article class="product-card">
+                <div class="product-image-box">
+                    <span class="badge-discount">-15%</span>
 
-.current-price {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--primary-color);
-}
+                    <img
+                        src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=400&q=80"
+                        alt="Nhà Giả Kim"
+                        class="product-img"
+                    >
 
-.old-price {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    text-decoration: line-through;
-}
+                    <button type="button"
+                            class="btn-quickview">
+                        Xem nhanh
+                    </button>
+                </div>
 
-/* NÚT THAO TÁC (ACTIONS) */
-.product-actions {
-    display: flex;
-    gap: 8px;
-}
+                <div class="product-info">
+                    <p class="product-category">
+                        Sách Kinh Điển
+                    </p>
 
-.btn-add-cart,
-.btn-buy-now {
-    flex: 1;
-    padding: 8px 4px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    border-radius: var(--radius-sm);
-    cursor: pointer;
-    transition: var(--transition);
-    text-align: center;
-}
+                    <h3 class="product-title"
+                        title="Nhà Giả Kim (Tái Bản)">
+                        Nhà Giả Kim (Tái Bản 2026)
+                    </h3>
 
-.btn-add-cart {
-    background-color: #FFFFFF;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-}
+                    <p class="product-author">
+                        Paulo Coelho
+                    </p>
 
-.btn-add-cart:hover {
-    background-color: #FFF0F0;
-}
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-count">(210)</span>
+                    </div>
 
-.btn-buy-now {
-    background-color: var(--primary-color);
-    color: #FFFFFF;
-    border: 1px solid var(--primary-color);
-}
+                    <div class="product-price-box">
+                        <span class="current-price">
+                            67.150 đ
+                        </span>
+                        <span class="old-price">
+                            79.000 đ
+                        </span>
+                    </div>
 
-.btn-buy-now:hover {
-    background-color: var(--primary-hover);
-}
+                    <div class="product-actions">
+                        <button type="button"
+                                class="btn-add-cart">
+                            Thêm giỏ hàng
+                        </button>
 
-/* ==========================================================================
-   5. MEDIA QUERIES (RESPONSIVE CHUYÊN SÂU)
-   ========================================================================== */
+                        <button type="button"
+                                class="btn-buy-now">
+                            Mua ngay
+                        </button>
+                    </div>
+                </div>
+            </article>
 
-/* TABLET (Kích thước màn hình từ 600px đến 991px) */
-@media (max-width: 768px) {
-    .product-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 cột */
-        gap: 12px;
-    }
-}
+            <!-- SẢN PHẨM 4 -->
+            <article class="product-card">
+                <div class="product-image-box">
+                    <span class="badge-discount">-30%</span>
 
-/* MOBILE (Kích thước màn hình dưới 600px) */
-@media (max-width: 480px) {
-    .product-section {
-        padding: 12px;
-    }
+                    <img
+                        src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=400&q=80"
+                        alt="Tâm Lý Học Về Tiền"
+                        class="product-img"
+                    >
 
-    .section-title {
-        font-size: 1.05rem;
-    }
+                    <button type="button"
+                            class="btn-quickview">
+                        Xem nhanh
+                    </button>
+                </div>
 
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 cột chuẩn mobile */
-        gap: 10px;
-    }
+                <div class="product-info">
+                    <p class="product-category">
+                        Kinh Tế - Kỹ Năng
+                    </p>
 
-    .product-card {
-        padding: 8px;
-    }
+                    <h3 class="product-title"
+                        title="Tâm Lý Học Về Tiền - Khéo Léo Quản Lý Tài Chính">
+                        Tâm Lý Học Về Tiền - Khéo Léo Quản Lý Tài Chính
+                    </h3>
 
-    .product-title {
-        font-size: 0.85rem;
-    }
+                    <p class="product-author">
+                        Morgan Housel
+                    </p>
 
-    .current-price {
-        font-size: 0.95rem;
-    }
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-count">(340)</span>
+                    </div>
 
-    .old-price {
-        font-size: 0.75rem;
-    }
+                    <div class="product-price-box">
+                        <span class="current-price">
+                            133.000 đ
+                        </span>
+                        <span class="old-price">
+                            190.000 đ
+                        </span>
+                    </div>
 
-    /* Trên mobile cho nút Mua ngay ẩn bớt text hoặc xếp dọc nếu cần */
-    .product-actions {
-        flex-direction: column;
-        gap: 6px;
-    }
+                    <div class="product-actions">
+                        <button type="button"
+                                class="btn-add-cart">
+                            Thêm giỏ hàng
+                        </button>
 
-    .btn-add-cart,
-    .btn-buy-now {
-        padding: 6px 0;
-        font-size: 0.75rem;
-    }
+                        <button type="button"
+                                class="btn-buy-now">
+                            Mua ngay
+                        </button>
+                    </div>
+                </div>
+            </article>
 
-    /* Nút xem nhanh không dùng trên cảm ứng mobile */
-    .btn-quickview {
-        display: none;
-    }
-}
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>
