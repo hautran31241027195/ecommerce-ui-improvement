@@ -294,7 +294,7 @@ body {
    ========================================================================== */
 
 /* TABLET (Kích thước màn hình từ 600px đến 991px) */
-@media (max-width: 991px) {
+@media (max-width: 768px) {
     .product-grid {
         grid-template-columns: repeat(3, 1fr); /* 3 cột */
         gap: 12px;
@@ -302,7 +302,7 @@ body {
 }
 
 /* MOBILE (Kích thước màn hình dưới 600px) */
-@media (max-width: 599px) {
+@media (max-width: 480px) {
     .product-section {
         padding: 12px;
     }
