@@ -294,9 +294,9 @@ body {
    ========================================================================== */
 
 /* TABLET (Kích thước màn hình từ 600px đến 991px) */
-@media (max-width: 991px) {
+@media (max-width: 768px) {
     .product-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 cột */
+        grid-template-columns: repeat(2, 1fr); /* 2 cột */
         gap: 12px;
     }
 }
