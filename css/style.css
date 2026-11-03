@@ -302,7 +302,7 @@ body {
 }
 
 /* MOBILE (Kích thước màn hình dưới 600px) */
-@media (max-width: 200px) {
+@media (max-width: 480px) {
     .product-section {
         padding: 12px;
     }
