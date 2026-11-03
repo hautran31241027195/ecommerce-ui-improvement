@@ -302,7 +302,7 @@ body {
 }
 
 /* MOBILE (Kích thước màn hình dưới 600px) */
-@media (max-width: 480px) {
+@media (max-width: 400px) {
     .product-section {
         padding: 12px;
     }
@@ -314,7 +314,6 @@ body {
     .product-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 cột chuẩn mobile */
         gap: 10px;
-       align-items: strech;
     }
 
     .product-card {
