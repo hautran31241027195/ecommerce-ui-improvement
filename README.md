@@ -1,37 +1,80 @@
-# E-commerce UI Improvement
+# Cải Tiến Giao Diện Thẻ Sản Phẩm - FAHASA
 
-## 1. Giới thiệu
-Dự án tập trung khảo sát website thương mại điện tử **FAHASA** và tiến hành thiết kế cải tiến lại khu vực **Thẻ sản phẩm** cùng **Bố cục danh sách sản phẩm** nhằm tối ưu hóa trải nghiệm người dùng (UX) trên cả máy tính lẫn thiết bị di động.
+## 1. Giới thiệu bài tập
 
-## 2. Website tham khảo
-- Tên website: FAHASA
-- URL: [https://www.fahasa.com/](https://www.fahasa.com/)
-- Khu vực đã khảo sát: Trang chủ, Danh mục sản phẩm, Chi tiết sản phẩm, Tìm kiếm, Giỏ hàng.
+Đây là bài tập cá nhân thuộc môn Phát triển ứng dụng WEB/TMĐT.
+Dự án tiếp tục phát triển từ bài tập Buổi 1, tập trung cải tiến
+giao diện thẻ sản phẩm và bố cục danh sách sản phẩm theo hướng
+trực quan, dễ theo dõi và tương thích với nhiều kích thước màn hình.
 
-## 3. Chức năng
-- Hiển thị lưới danh sách sản phẩm trực quan.
-- Hiển thị đầy đủ hình ảnh, tên sản phẩm, tác giả, đánh giá sao.
-- Hiển thị nổi bật giá khuyến mãi, giá gốc gạch ngang và nhãn phần trăm giảm giá (`-20%`).
-- Tích hợp nút thao tác nhanh ("Thêm giỏ hàng", "Mua ngay", "Xem nhanh").
-- Bố cục linh hoạt thích ứng mượt mà trên nhiều kích thước màn hình từ Desktop, Tablet đến Mobile.
+## 2. Website tham khảo và khu vực đã cải tiến
 
-## 4. Công nghệ sử dụng
-- HTML5
-- CSS3
+- Website tham khảo: FAHASA
+- Địa chỉ: https://www.fahasa.com/
+- Khu vực được lựa chọn: Thẻ sản phẩm và danh sách sản phẩm.
+- Nội dung hiển thị: Hình ảnh, tên sách, tác giả, đánh giá,
+  giá bán, giá gốc, nhãn giảm giá và các nút thao tác.
 
-## 5. Cách chạy dự án
-1. Tải toàn bộ mã nguồn về máy tính.
-2. Mở thư mục dự án và nhấp đúp chuột vào file `index.html` (hoặc mở bằng trình duyệt Google Chrome/Edge).
+## 3. Công nghệ và kỹ thuật đã thực hành
 
-## 6. Cải tiến đã thực hiện
-- **Vấn đề ban đầu:** Trên giao diện thực tế của FAHASA, các thẻ sản phẩm trên màn hình di động có mật độ quá dày, các nút bấm nhỏ dễ gây bấm nhầm, đồng thời việc hiển thị mức giảm giá chưa tạo điểm nhấn mạnh mẽ cho người mua.
-- **Thay đổi đã thực hiện:** 
-  - Thiết kế lại khung thẻ sản phẩm dạng hình chữ nhật đứng chuẩn tỉ lệ bìa sách (4:5).
-  - Bổ sung huy hiệu giảm giá góc trên bên trái và nhóm giá tiền rõ ràng.
-  - Tối ưu hóa bố cục CSS Grid (4 cột trên desktop, 3 cột trên tablet, 2 cột trên mobile) và chuyển các nút thao tác thành dạng hàng dọc trên màn hình nhỏ để mở rộng diện tích chạm (tap-target) cho người dùng điện thoại.
+- HTML5: Sử dụng các phần tử main, section, article,
+  h2, h3, p, img, a và button để tổ chức nội dung.
+- CSS3: Sử dụng bộ chọn CSS, biến CSS, Box Model,
+  màu sắc, đường viền, khoảng cách và hiệu ứng.
+- Flexbox: Sắp xếp các thành phần trong tiêu đề,
+  thông tin đánh giá và nhóm nút thao tác.
+- CSS Grid: Tổ chức danh sách sản phẩm theo dạng lưới.
+- Responsive Design: Sử dụng Media Queries để điều chỉnh
+  số cột hiển thị theo kích thước màn hình.
+- Hover và Transition: Tạo hiệu ứng khi di chuột
+  vào thẻ sản phẩm và hình ảnh.
 
-## 7. Hỗ trợ từ AI
-- **Phần AI hỗ trợ:** Đề xuất cấu trúc HTML5 ngữ nghĩa, xây dựng hệ thống biến màu (CSS Variables) và viết mẫu bố cục CSS Grid đáp ứng đa màn hình.
-- **Phần tôi kiểm tra, điều chỉnh và bổ sung:** 
-  - Kiểm tra tính liên kết giữa file HTML và CSS trên trình duyệt thực tế.
-  - Tự phát hiện lỗi vỡ nút bấm khi thu nhỏ màn hình điện thoại dưới 360px và chủ động điều chỉnh đoạn CSS `@media` chuyển nút sang hàng dọc để tối ưu trải nghiệm ngón tay cái.
+## 4. Cấu trúc thư mục
+
+```text
+ecommerce-ui-improvement/
+├── css/
+│   └── style.css
+├── images/
+│   └── product-demo.jpg
+├── AI_USAGE.md
+├── README.md
+└── index.html
+```
+
+## 5. Hướng dẫn chạy website
+
+1. Tải repository về máy tính hoặc giải nén mã nguồn.
+2. Mở thư mục dự án.
+3. Mở tệp index.html bằng trình duyệt Google Chrome,
+   Microsoft Edge hoặc trình duyệt tương thích.
+4. Thu nhỏ hoặc mở rộng cửa sổ trình duyệt để kiểm tra
+   khả năng hiển thị trên các kích thước màn hình.
+
+## 6. Những thay đổi đã thực hiện
+
+- Tổ chức khu vực danh sách sản phẩm bằng CSS Grid.
+- Thiết kế thẻ sản phẩm theo bố cục dọc, gồm hình ảnh
+  và các thông tin cần thiết.
+- Làm nổi bật giá bán, giá gốc và nhãn giảm giá.
+- Sử dụng Flexbox để sắp xếp các thành phần bên trong.
+- Bổ sung hiệu ứng hover cho thẻ sản phẩm và hình ảnh.
+- Điều chỉnh bố cục theo các kích thước màn hình:
+  4 cột trên màn hình lớn, 3 cột ở màn hình trung bình
+  và 2 cột ở màn hình nhỏ.
+- Chuyển nhóm nút thao tác sang dạng dọc trên màn hình nhỏ.
+
+## 7. Sử dụng AI
+
+Trong quá trình thực hiện, em sử dụng công cụ AI để tham khảo
+cấu trúc HTML5, cách tổ chức CSS, bố cục Grid, Flexbox
+và khả năng hiển thị responsive.
+
+Các nội dung AI đề xuất được em xem xét, đối chiếu với mã nguồn
+và điều chỉnh trước khi sử dụng. Chi tiết được trình bày trong
+tệp AI_USAGE.md.
+
+## 8. Thông tin repository
+
+- GitHub repository: https://github.com/hautran31241027195/ecommerce-ui-improvement
+- GitHub Pages: https://hautran31241027195.github.io/ecommerce-ui-improvement/
