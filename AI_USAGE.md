@@ -1,28 +1,92 @@
 # AI Usage Log
 
-## 1. Công cụ AI
-- **Tên công cụ:** Gemini (Google)
+## 1. Công cụ AI đã sử dụng
 
-## 2. Mục đích sử dụng
-- Hỗ trợ phân tích nghiệp vụ và trải nghiệm người dùng (UX/UI) cho 5 khu vực của website FAHASA.
-- Đề xuất bố cục, cấu trúc thẻ HTML5 và mã nguồn CSS3 tối ưu cho phần cải tiến thẻ sản phẩm.
-- Giải thích cách thiết kế giao diện tương thích đa màn hình (Responsive Design).
+- Tên công cụ: ChatGPT.
+- Mục đích: Hỗ trợ tham khảo và giải quyết một số vấn đề
+  trong quá trình phân tích, thiết kế giao diện và viết mã HTML5,
+  CSS3 cho bài tập cá nhân.
 
-## 3. Prompt đã sử dụng
-- *Prompt 1 (Khảo sát website):* Yêu cầu AI đóng vai chuyên gia BA/UX phân tích 5 khu vực (Trang chủ, Danh mục, Chi tiết sản phẩm, Tìm kiếm, Giỏ hàng) với các tiêu chí mục đích, UI, điểm thuận tiện, vấn đề phát sinh và đề xuất cải tiến.
-- *Prompt 2 (Tạo mã nguồn):* Yêu cầu AI đề xuất phương án và tạo mã nguồn HTML5/CSS3 cho phần cải tiến thẻ sản phẩm với tối thiểu 4 sản phẩm mẫu, hỗ trợ hiển thị trên máy tính và điện thoại.
+## 2. Mục đích sử dụng AI
 
-## 4. Kết quả AI đề xuất
-- Cung cấp khung bảng phân tích chuẩn thương mại điện tử cho 5 khu vực chức năng.
-- Cung cấp đoạn mã HTML và CSS hoàn chỉnh sử dụng CSS Grid và Flexbox, tách biệt rõ ràng file cấu trúc và file định dạng kiểu dáng.
+Em sử dụng AI để tham khảo các nội dung sau:
 
-## 5. Kiểm tra và điều chỉnh
-- **Điểm giữ nguyên:** Cấu trúc lưới sản phẩm 4 cột và cơ chế đổi màu theo bảng màu chuẩn của thương hiệu FAHASA (`#C92127`).
-- **Điểm đã chỉnh sửa/bổ sung:** 
-  - Đối chiếu thực tế website FAHASA để loại bỏ các giả định không chính xác của AI (ví dụ: thực tế giỏ hàng chưa tính sẵn phí ship chính xác như dự đoán ban đầu).
-  - Điều chỉnh thêm các thuộc tính CSS trên thiết bị di động (`@media (max-width: 599px)`) để chuyển cụm nút thao tác mua hàng sang dạng hàng dọc, giúp tránh lỗi tràn chữ và tăng kích thước vùng bấm trên màn hình cảm ứng.
+- Phân tích giao diện website FAHASA và xác định khu vực
+  có thể cải tiến.
+- Tham khảo cách tổ chức cấu trúc HTML5 cho thẻ sản phẩm.
+- Tìm hiểu cách sử dụng CSS Grid và Flexbox.
+- Tham khảo cách sử dụng Box Model, màu sắc và khoảng cách.
+- Tìm hiểu cách điều chỉnh giao diện theo kích thước màn hình
+  bằng Media Queries.
+- Hỗ trợ giải thích một số đoạn mã HTML và CSS.
 
-## 6. Phần tôi hiểu và có thể giải thích
-- **CSS Grid & Flexbox:** Hiểu cách dùng `grid-template-columns: repeat(4, 1fr)` để chia đều 4 cột sản phẩm trên máy tính và tự điều chỉnh xuống 2 cột trên điện thoại.
-- **Media Queries (`@media`):** Hiểu cách áp dụng điểm dừng (breakpoint) để thay đổi thuộc tính giao diện tùy theo kích thước màn hình.
-- **Pseudo-classes (`:hover`):** Hiểu cơ chế tạo hiệu ứng tương tác khi người dùng di chuột vào sản phẩm (`transform: translateY(-4px)`, phóng to ảnh và hiện nút xem nhanh).
+## 3. Prompt tiêu biểu đã sử dụng
+
+### Prompt 1: Khảo sát website
+
+Yêu cầu AI hỗ trợ phân tích các khu vực trên website FAHASA,
+bao gồm trang chủ, danh mục sản phẩm, chi tiết sản phẩm,
+tìm kiếm và giỏ hàng.
+
+Nội dung cần xem xét gồm mục đích sử dụng, bố cục giao diện,
+điểm thuận tiện, vấn đề có thể phát sinh và hướng cải tiến.
+
+### Prompt 2: Xây dựng giao diện thẻ sản phẩm
+
+Yêu cầu AI hỗ trợ đề xuất và xây dựng mã HTML5, CSS3
+cho khu vực thẻ sản phẩm của website bán sách.
+
+Giao diện tham khảo cần có hình ảnh sản phẩm, tên sách,
+tác giả, đánh giá, giá bán, giá gốc, nhãn giảm giá
+và các nút thao tác.
+
+Đồng thời, giao diện cần có khả năng hiển thị trên
+máy tính, máy tính bảng và điện thoại.
+
+Lưu ý: Đây là phần mô tả nội dung prompt, không phải
+bản sao nguyên văn lịch sử hội thoại.
+
+## 4. Kết quả AI hỗ trợ
+
+AI hỗ trợ tham khảo:
+
+- Cách tổ chức nội dung bằng các phần tử HTML.
+- Cách sử dụng CSS Grid để tạo danh sách sản phẩm.
+- Cách sử dụng Flexbox để sắp xếp các thành phần.
+- Cách sử dụng Media Queries để điều chỉnh bố cục.
+- Cách tạo hiệu ứng hover và transition.
+
+## 5. Kiểm tra và điều chỉnh của cá nhân
+
+Sau khi tham khảo các đề xuất, em đối chiếu lại với mã nguồn
+và kiểm tra giao diện trên trình duyệt.
+
+Các nội dung em kiểm tra gồm:
+
+- Kiểm tra đường dẫn liên kết giữa index.html và css/style.css.
+- Kiểm tra hình ảnh và thuộc tính alt của từng sản phẩm.
+- Kiểm tra bố cục danh sách sản phẩm trên màn hình lớn,
+  màn hình trung bình và màn hình nhỏ.
+- Kiểm tra khoảng cách, màu sắc, kích thước chữ và nút thao tác.
+- Kiểm tra hiệu ứng hover khi di chuột vào thẻ sản phẩm.
+- Đối chiếu kết quả hiển thị với các quy tắc CSS đã viết.
+
+Các điều chỉnh được thể hiện trong mã nguồn gồm:
+- Sử dụng CSS Grid để chia danh sách thành 4 cột,
+  3 cột và 2 cột theo các breakpoint.
+- Sử dụng Flexbox để sắp xếp các thành phần bên trong thẻ.
+- Điều chỉnh nhóm nút thao tác thành dạng dọc
+  trên màn hình nhỏ.
+- Ẩn nút xem nhanh trên màn hình nhỏ.
+- Sử dụng hiệu ứng hover và transition cho thẻ sản phẩm.
+
+## 6. Kiến thức em đã tiếp thu
+
+Qua quá trình thực hiện, em hiểu rõ hơn:
+
+- Vai trò của các phần tử HTML trong việc tổ chức nội dung.
+- Sự khác nhau giữa margin và padding trong Box Model.
+- Cách sử dụng Flexbox để sắp xếp các thành phần.
+- Cách sử dụng CSS Grid để tạo bố cục danh sách sản phẩm.
+- Cách sử dụng Media Queries để thiết kế giao diện responsive.
+- Cách sử dụng hover và transition để tạo hiệu ứng giao diện.và tự điều chỉnh kết quả trước khi hoàn thiện bài tập.
